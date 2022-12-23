@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/nav.css">
+    <link rel="stylesheet" href="./assets/css/font.css">
+    <link rel="stylesheet" href="./assets/css/effects.css">
+
+    <link rel="shortcut icon" href="./assets/img/logo.ico" type="image/x-icon">
+
+    <!-- file specific css -->
+    <link rel="stylesheet" href="./assets/css/index/sizes.css">
+
+    <!-- debug css (will be remove and shouldn't bother unless there is a bug) -->
+    <link rel="stylesheet" href="./assets/css/debug.css">
+
+</head>
+<body class="flex flex-col">
+    <!-- navbar -->
+    <nav class="nav-container flex items-center px-8">
+        <div class="left-nav">
+            <div class="logo-placeholder">
+                <img src="./assets/img/logo.png" alt="">
+            </div>
+        </div>
+        <div class="right-nav w-full block">
+            <div class="nav-button-container float-right">
+                <input type="checkbox" name="burgermenu" id="burgermenu" hidden>
+                <label class="cursor-pointer" for="burgermenu">
+                    <div class="hamburger-button flex relative h-full flex-col justify-evenly duration-200 delay-100">
+                        <span class="nav-button-line side-line delay-200 duration-200"></span>
+                        <span class="nav-button-line flex">
+                            <span class="nav-button-line cross duration-200"></span>
+                        </span>
+                        <span class="nav-button-line side-line delay-200 duration-200"></span>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- main content start -->
+    <main class="content w-screen">
+        <div class="carousel-container bg-debug-blue overflow-hidden relative">
+            <img class="w-full absolute center-absolute" src="./assets/img/jonathan-sanchez-Ahxw0gICnKw-unsplash-90deg.jpg" alt="">
+            <div class="image-overlay w-full h-full absolute flex flex-col">
+                <div class="top-overlay flex justify-center">
+                    <div class="overlay-texts text-main flex flex-col justify-center text-center py-4">
+                        <h1 class="text-6xl">New Year Delight</h1>
+                        <h3 class="text-2xl font-thin">See our 2023 specials</h3>
+                    </div>
+                </div>
+                <div class="bottom-overlay"></div>
+            </div>
+        </div>
+
+        <div class="item-display-container flex flex-row justify-evenly bg-debug-purple">
+            <div class="item-container bg-debug-green flex items-center">
+                <div class="bg-debug-blue item flex flex-col justify-center w-full h-full rounded-2xl border-8 border-solid border-secondary relative">
+                    <div class="item-img z-10 w-full">
+                        <img class="item-img w-full object-cover" src="./assets/img/luisana-galicia-rGz2Z6tVaeg-unsplash.jpg" alt="">
+                    </div>
+                    <div class="item-text z-10 px-4 py-4">
+                        <h3 class="text-2xl" >Cloram</h3>
+                        <p class="text-lg">Rp. 6.000.000</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- just copy from above and change the image -->
+            <div class="item-container bg-debug-green"></div>
+            <!-- just copy from above and change the image -->
+
+            <div class="item-container bg-debug-green flex items-center">
+                <div class="see-more-button w-full text-2xl text-center text-main font-bold bg-secondary py-4 cursor-pointer hover-darken hover-zoom hover-box-glow-secondary">See More</div>
+            </div>
+        </div>
+        
+        <div class="about-container bg-debug-aqua"></div>
+    </main>
+
+
+
+
+    <!-- footer -->
+    <footer class="footer-container bg-main bg-debug-green"></footer>
+</body>
+</html>

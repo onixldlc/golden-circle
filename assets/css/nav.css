@@ -1,0 +1,34 @@
+/* styling css */
+.nav-button-container{
+    width: 30px;
+    height: 30px;
+}
+.logo-placeholder{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+.nav-button-line{
+    width: 100%;
+    height: 0.40rem;
+    background-color: black;
+    border-radius: 1rem;
+}
+
+
+
+/* effect css */
+#burgermenu:checked + label > .hamburger-button > span > .cross{
+    transition-delay: 200ms;
+    transition-duration: 200ms;
+    transform: rotate(-90deg);
+}
+#burgermenu:checked + label > .hamburger-button > .side-line{
+    transition-duration: 100ms;
+    transition-delay: 0ms;
+    opacity: 0;
+}
+
+#burgermenu:checked + label > .hamburger-button {
+    transform: rotate(-45deg);
+}

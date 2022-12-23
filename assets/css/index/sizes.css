@@ -1,0 +1,24 @@
+/* root structure */
+.carousel-container{
+    height: 500px;
+}
+.item-display-container{
+    height: 500px;
+}
+.about-container{
+    height: 600px;
+}
+
+
+
+
+/* display structure */
+.item-container{
+    width: 350px;
+}
+.item{
+    height: 400px;
+}
+.item-img{
+    height: 250px;
+}

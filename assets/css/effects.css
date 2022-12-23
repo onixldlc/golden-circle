@@ -1,0 +1,13 @@
+
+/* effect style */
+.hover-zoom:hover{
+    transform: scaleX(1.01) scaleY(1.01);
+}
+
+.hover-box-glow-secondary:hover{
+    box-shadow: 0px 0px 15px rgb(200, 178, 55);
+}
+
+.hover-darken:hover{
+    filter: brightness(105%);
+}
