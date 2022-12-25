@@ -1,4 +1,4 @@
-/* styling css */
+/* nav styling css */
 .nav-button-container{
     width: 30px;
     height: 30px;
@@ -17,7 +17,7 @@
 
 
 
-/* effect css */
+/* nav effect css */
 #burgermenu:checked + label > .hamburger-button > span > .cross{
     transition-delay: 200ms;
     transition-duration: 200ms;
@@ -31,4 +31,19 @@
 
 #burgermenu:checked + label > .hamburger-button {
     transform: rotate(45deg);
+}
+
+
+
+
+
+
+
+
+
+/* footer styling css */
+.footer-logo-placeholder{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
 }
