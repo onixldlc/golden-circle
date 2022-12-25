@@ -403,3 +403,21 @@ footer{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.shadow{
+    display:block;
+    position:relative;
+}
+.shadow:before{
+    display:block;
+    content:'';
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-image : linear-gradient(to bottom, 
+                    rgba(255,255,255, 1) 0%, 
+                    rgba(255,255,255, 0.75) 10%,
+                    rgba(255,255,255, 0) 25%, 
+                    rgba(255,255,255, 0) 75%, 
+                    rgba(255,255,255, 0.75) 90%,
+                    rgba(255,255,255, 1) 100%);
+}
