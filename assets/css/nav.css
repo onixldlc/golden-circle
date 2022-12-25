@@ -21,7 +21,7 @@
 #burgermenu:checked + label > .hamburger-button > span > .cross{
     transition-delay: 200ms;
     transition-duration: 200ms;
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
 }
 #burgermenu:checked + label > .hamburger-button > .side-line{
     transition-duration: 100ms;
@@ -30,5 +30,5 @@
 }
 
 #burgermenu:checked + label > .hamburger-button {
-    transform: rotate(-45deg);
+    transform: rotate(45deg);
 }
