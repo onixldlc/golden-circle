@@ -39,6 +39,9 @@ footer{
 .block {
     display: block;
 }
+.hidden{
+    display: none;
+}
 .border-solid {
     border-style: solid;
 }
@@ -53,6 +56,9 @@ footer{
 }
 .items-center {
     align-items: center;
+}
+.items-end {
+    align-items:flex-end;
 }
 .float-right {
     float: right;
@@ -507,6 +513,8 @@ footer{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+
 .shadow{
     display:block;
     position:relative;
@@ -520,6 +528,17 @@ footer{
     box-shadow: 0 0 15px 20px white inset;
     z-index: 10;
 }
+.vignette:before{
+    display:block;
+    content:'';
+    position:absolute;
+    width:100%;
+    height:100%;
+    box-shadow: 0 0 200px #000000FF inset;
+    z-index: 10;
+}
+
+
 .filter-white{
     filter: brightness(0) invert(1);
 }
@@ -531,4 +550,7 @@ footer{
 }
 .aspect-items-img{
     aspect-ratio: 65 / 50;
+}
+.item-display-overlay{
+    background-color: #00000040;
 }
