@@ -2,9 +2,9 @@
 .carousel-container{
     height: 500px;
 }
-.item-display-container{
+/* .item-display-container{
     height: 500px;
-}
+} */
 .about-container{
     height: 600px;
 }
@@ -14,7 +14,7 @@
 
 /* display structure */
 .item-container{
-    width: 350px;
+    width: 26%;
 }
 .item{
     height: 400px;
@@ -22,6 +22,9 @@
 .item-img{
     height: 250px;
 }
+/* .item-img-relative{
+    height: 250px;
+} */
 .about-text-container{
     width: 580px;
 }

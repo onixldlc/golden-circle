@@ -1,0 +1,28 @@
+@media only screen and (max-width: 740px)  {
+    .bg-image-carousel{
+        width: auto;
+        height: 100%;
+    }
+    .bg-image-about{
+        width: auto;
+        height: 100%;
+    }
+    .store-item{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1280px){
+    /* .item-display-container{
+        height: 80vh;
+    } */
+    .item-container{
+        margin: 0 20px;
+    }
+    .item{
+        height: auto;
+    }
+    /* .item-img-relative{
+        height: 75%;
+    } */
+}
