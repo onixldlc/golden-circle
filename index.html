@@ -22,6 +22,7 @@
 </head>
 <body class="flex flex-col">
     <!-- navbar -->
+    <input type="checkbox" name="burgermenu" id="burgermenu" hidden>
     <nav class="nav-container flex items-center px-8">
         <div class="left-nav">
             <div class="logo-placeholder">
@@ -30,7 +31,6 @@
         </div>
         <div class="right-nav w-full block">
             <div class="nav-button-container float-right">
-                <input type="checkbox" name="burgermenu" id="burgermenu" hidden>
                 <label class="cursor-pointer" for="burgermenu">
                     <div class="hamburger-button flex relative h-full flex-col justify-evenly duration-200 delay-100">
                         <span class="nav-button-line side-line delay-200 duration-200"></span>
@@ -43,6 +43,14 @@
             </div>
         </div>
     </nav>
+    <div class="nav-list-container relative">
+        <div class="nav-list-option w-full flex flex-col absolute right-0 z-10 bg-main overflow-hidden opacity-0 duration-300 pointer-events-none py-2">
+            <h3 class="nav-option cursor-pointer px-2 duration-100 py-1"><a href="#">Home</a></h3>
+            <h3 class="nav-option cursor-pointer px-2 duration-100 py-1"><a href="#">About Us</a></h3>
+            <h3 class="nav-option cursor-pointer px-2 duration-100 py-1"><a href="#">Registers</a></h3>
+            <h3 class="nav-option cursor-pointer px-2 duration-100 py-1"><a href="#">Our Collection</a></h3>
+        </div>    
+    </div>
 
 
 
@@ -124,7 +132,7 @@
                     <div class="about-text-container text-main px-16">
                         <h1 class="text-5xl">Expertise 175 years in the making</h1>
                         <p class="text-3xl">From 1847 we have strived to be the most trusted jewelery speciality store, striving to create perfection</p>
-                        <div class="about-button w-full mt-8 text-2xl text-center text-main font-bold bg-secondary py-4 cursor-pointer hover-darken hover-zoom hover-box-glow-secondary">See More</div>
+                        <div class="about-button w-full mt-8 text-2xl text-center text-main font-bold bg-secondary py-4 cursor-pointer hover-darken hover-zoom hover-box-glow-secondary">See How</div>
                     </div>
                 </div>
             </div>

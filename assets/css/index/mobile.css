@@ -16,6 +16,11 @@
 
 
 @media only screen and (max-width: 740px)  {
+    .nav-list-option{
+        width: 100%;
+        border-radius: 0;
+    }
+
     .bg-image-carousel{
         width: auto;
         height: 100%;

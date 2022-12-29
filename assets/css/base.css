@@ -1,5 +1,5 @@
 /* default classes */
-body,html,h1,h2,h3,h4,h5,h6,p{
+body,html,h1,h2,h3,h4,h5,h6,p,a{
     margin: 0;
     padding: 0;
 }
@@ -10,8 +10,13 @@ img,video {
     height: auto;
 }
 
-*,h1,h2,h3,h4,h5,h6,p{
+*,h1,h2,h3,h4,h5,h6,p,a{
     font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    color: inherit;
+    text-decoration: inherit;
 }
 
 
@@ -93,15 +98,27 @@ footer{
     left: 50%;
 }
 .top-0{
-    top:0
+    top:0;
 }
 .left-0{
-    left:0
+    left:0;
+}
+.bottom-0{
+    bottom:0;
+}
+.right-0{
+    right:0;
 }
 
 
 
 /* sizing classes */
+.h-0{
+    height: 0px;
+}
+.w-0{
+    width: 0px;
+}
 .h-full {
     height: 100%;
 }
@@ -193,6 +210,12 @@ footer{
 
 
 /* padding classes */
+.pb-1{
+    padding-bottom: 0.25rem;
+}
+.p-1{
+    padding: 0.25rem;
+}
 .p-2{
     padding: 0.5rem;
 }
@@ -201,6 +224,10 @@ footer{
 }
 .p-8{
     padding: 2rem;
+}
+.py-1{
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
 }
 .py-2 {
     padding-top: 0.5rem;
@@ -213,6 +240,10 @@ footer{
 .py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
+}
+.px-1{
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
 }
 .px-2 {
     padding-left: 0.5rem;
@@ -448,6 +479,9 @@ footer{
 .duration-200 {
     transition-duration: 200ms;
 }
+.duration-300 {
+    transition-duration: 300ms;
+}
 .delay-50{
     transition-delay: 50ms;
 }
@@ -497,6 +531,15 @@ footer{
 }
 
 
+
+
+/* visibility classes */
+.visible{
+    visibility: visible;
+}
+.invisible{
+    visibility: hidden;
+}
 
 
 

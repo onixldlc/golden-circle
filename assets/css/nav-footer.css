@@ -14,26 +14,40 @@
     background-color: black;
     border-radius: 1rem;
 }
+.nav-list-option{
+    width: 300px;
+    top: -20px;
+    border-radius: 0 0 0 10px;
+}
+
+
 
 
 
 /* nav effect css */
-#burgermenu:checked + label > .hamburger-button > span > .cross{
+#burgermenu:checked + nav * > label > .hamburger-button > span > .cross{
     transition-delay: 200ms;
     transition-duration: 200ms;
-    transform: rotate(90deg);
+    transform: rotate(-90deg);
 }
-#burgermenu:checked + label > .hamburger-button > .side-line{
+#burgermenu:checked + nav * > label > .hamburger-button > .side-line{
     transition-duration: 100ms;
     transition-delay: 0ms;
     opacity: 0;
 }
 
-#burgermenu:checked + label > .hamburger-button {
-    transform: rotate(45deg);
+#burgermenu:checked + nav * > label > .hamburger-button {
+    transform: rotate(-45deg);
 }
-
-
+#burgermenu:checked ~ .nav-list-container > .nav-list-option{
+    opacity: 1;
+    transform: translate(0, 20px);
+    pointer-events: all;
+}
+.nav-option:hover{
+    background-color: #c8b237;
+    color: white;
+}
 
 
 
