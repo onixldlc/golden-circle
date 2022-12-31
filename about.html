@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/nav-footer.css">
+    <link rel="stylesheet" href="./assets/css/font.css">
+    <link rel="stylesheet" href="./assets/css/effects.css">
+
+    <link rel="shortcut icon" href="./assets/img/logo.ico" type="image/x-icon">
+
+    <!-- file specific css -->
+    <link rel="stylesheet" href="./assets/css/about/sizes.css">
+    <link rel="stylesheet" href="./assets/css/about/mobile.css">
+
+    <!-- debug css (will be remove and shouldn't bother unless there is a bug) -->
+    <link rel="stylesheet" href="./assets/css/debug.css">
+
+</head>
+<body class="flex flex-col">
+    <!-- navbar -->
+    <input type="checkbox" name="burgermenu" id="burgermenu" hidden>
+    <nav class="nav-container flex items-center px-8">
+        <div class="left-nav">
+            <div class="logo-placeholder">
+                <img src="./assets/img/logo.png" alt="">
+            </div>
+        </div>
+        <div class="right-nav w-full block">
+            <div class="nav-button-container float-right">
+                <label class="cursor-pointer" for="burgermenu">
+                    <div class="hamburger-button flex relative h-full flex-col justify-evenly duration-200 delay-100">
+                        <span class="nav-button-line side-line delay-200 duration-200"></span>
+                        <span class="nav-button-line flex">
+                            <span class="nav-button-line cross duration-200"></span>
+                        </span>
+                        <span class="nav-button-line side-line delay-200 duration-200"></span>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </nav>
+    <div class="nav-list-container relative">
+        <div class="nav-list-option w-full flex flex-col absolute right-0 z-10 bg-main overflow-hidden opacity-0 duration-300 pointer-events-none py-2">
+            <a href="./index.html"><h3 class="nav-option cursor-pointer px-2 duration-100 py-1">Home</h3></a>
+            <a href="./about.html"><h3 class="nav-option cursor-pointer px-2 duration-100 py-1">About Us</h3></a>
+            <a href="./register.html"><h3 class="nav-option cursor-pointer px-2 duration-100 py-1">Register</h3></a>
+            <a href="./store.html"><h3 class="nav-option cursor-pointer px-2 duration-100 py-1">Our Collection</h3></a>
+        </div>    
+    </div>
+
+
+
+
+    <!-- main content start -->
+    <main class="content">
+
+        <div class="about-description bg-secondary flex flex-col justify-center items-center text-main">
+            <h1 class="mb-4 text-5xl">Century Long Legacy</h1>
+            <p class="px-64 text-2xl text-center">The Golden Circle has for more than one century cemented it's legacy as the premiere jewelery store in Indonesia, offering speciality from many brands both international and domestic</p>
+        </div>
+
+        <div class="about-our-quality relative overflow-hidden">
+            <div class="bg-img-container absolute w-full h-full z--10 flex flex-col justify-end">
+                <img class="bg-image-detail object-cover" src="./assets/img/nati-melnychuk-Ki7TPcA9204-unsplash-90deg.jpg" alt="">
+            </div>
+            <div class="our-quality-text-container w-full h-full flex justify-start items-end flex-col text-main">
+                <div class="our-brand-text mt-16 mr-16">
+                    <h1 class="mb-4 text-5xl">Unparalleled Detail</h1>
+                    <p class="text-3xl">Our quality assurance, sales, and customer service teams ensures the quality of all items purchased by you.</p>                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="about-our-brand relative overflow-hidden">
+            <div class="bg-img-container absolute w-full h-full z--10 flex flex-col justify-end">
+                <img class="bg-image-brand object-cover" src="./assets/img/ricardo-gomez-angel-F2iCP_knaj8-unsplash.jpg" alt="">
+            </div>
+            <div class="our-brand-text-container w-full h-full flex justify-end items-end flex-col text-main">
+                <div class="our-brand-text mb-16 mr-16">
+                    <h1 class="mb-4 text-5xl">Ethically Sourced</h1>
+                    <p class="text-3xl">Our brand report quarterly on the source of their materials to make sure that they are mined ethically by abiding to strict environmental and labour guidelines according to local standards</p>                    
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+
+    <!-- footer -->
+    <footer class="footer-container bg-secondary flex flex-row px-8">
+        <div class="left-footer h-full flex items-center">
+            <div class="footer-logo-placeholder">
+                <img class="filter-white" src="./assets/img/logo.png" alt="">
+            </div>
+        </div>
+
+        <div class="center-footer w-full flex justify-center items-center text-main text-lg">
+            <p>Copyright © Golden Circle 2023. All Right Reserve</p>
+        </div>
+        
+        <div class="right-footer h-full flex items-center">
+            <div class="footer-logo-placeholder"></div>
+        </div>
+    </footer>
+</body>
+</html>
