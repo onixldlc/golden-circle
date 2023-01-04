@@ -1,7 +1,13 @@
 
 /* effect style */
 .hover-zoom:hover{
-    transform: scaleX(1.01) scaleY(1.01);
+    transform: scale(1.01);
+}
+.hover-zoom-lg:hover{
+    transform: scale(1.05);
+}
+.hover-zoom-xl:hover{
+    transform: scale(1.1);
 }
 
 .hover-box-glow-secondary:hover{

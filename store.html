@@ -13,8 +13,11 @@
     <link rel="shortcut icon" href="./assets/img/logo.ico" type="image/x-icon">
 
     <!-- file specific css -->
-    <!-- <link rel="stylesheet" href="./assets/css/index/sizes.css"> -->
-    <!-- <link rel="stylesheet" href="./assets/css/index/mobile.css"> -->
+    <link rel="stylesheet" href="./assets/css/store/sizes.css">
+    <link rel="stylesheet" href="./assets/css/store/mobile.css">
+
+    <!-- debug css (will be remove and shouldn't bother unless there is a bug) -->
+    <link rel="stylesheet" href="./assets/css/debug.css">
 
 </head>
 <body class="flex flex-col">
@@ -53,7 +56,171 @@
 
 
     <!-- main content start -->
-    <main class="content h-screen">
+    <main class="content">
+        <div class="our-jewelries-title relative overflow-hidden">
+            <img class="bg-our-jewelries-title w-full object-cover absolute center-absolute" src="./assets/img/jewelries.jpg" alt="">
+            <div class="our-jewelries-overlay w-full h-full absolute flex flex-col bg-overlay justify-center">
+                <div class="top-overlay flex justify-center">
+                    <div class="overlay-texts text-main flex flex-col justify-center text-center py-4">
+                        <h1 class="text-6xl">Our Jewelries</h1>
+                        <h3 class="text-2xl font-thin">We have two categories</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="yellow-gold-section">
+            <div class="h-full flex flex-col">
+                <div class="top-yellow-title text-secondary text-center py-4 box-border">
+                    <h1 class="text-7xl">Yellow Gold</h1>
+                </div>
+
+                <div class="bottom-yellow-items flex flex-row h-full justify-evenly">
+                    <!-- yellow gold items -->
+                    <div class="store-item item-container flex items-center justify-center hover-zoom-lg duration-200 cursor-pointer hover-duration-100">
+                        <!-- <div class="h-full w-full"> -->
+                            <div class="item flex flex-col justify-center aspect-items w-full box-border rounded-2xl border-4 border-solid border-secondary relative aspect-items bg-main">
+                                <div class="item-img-relative relative overflow-hidden aspect-items-img mt-5">
+                                    <div class="item-img-absolute h-full z-10 w-120 shadow absolute center-absolute">
+                                        <img class="w-full object-cover absolute center-absolute" src="./assets/img/items/yellow_gold_ring.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="item-text z-10 ml-4 py-4">
+                                    <h3 class="cursor-auto text-2xl w-fit">Cloram</h3>
+                                    <p class="cursor-auto text-lg w-fit">Rp 6.000.000</p>
+                                </div>
+                            </div>
+                        <!-- </div> -->
+                    </div>
+        
+                    <div class="store-item item-container flex items-center justify-center hover-zoom-lg duration-200 cursor-pointer hover-duration-100">
+                        <div class="item flex flex-col justify-center aspect-items w-full box-border rounded-2xl border-4 border-solid border-secondary relative aspect-items bg-main">
+                            <div class="item-img-relative relative overflow-hidden aspect-items-img mt-5">
+                                <div class="item-img-absolute h-full z-10 w-120 shadow absolute center-absolute">
+                                    <img class="w-full object-cover absolute center-absolute" src="./assets/img/items/yellow_gold_bracelet.png" alt="">
+                                </div>
+                            </div>
+                            <div class="item-text z-10 ml-4 py-4">
+                                <h3 class="cursor-auto text-2xl w-fit">Eowyn</h3>
+                                <p class="cursor-auto text-lg w-fit">Rp 17.000.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="store-item item-container flex items-center justify-center hover-zoom-lg duration-200 cursor-pointer hover-duration-100">
+                        <div class="item flex flex-col justify-center aspect-items w-full box-border rounded-2xl border-4 border-solid border-secondary relative aspect-items bg-main">
+                            <div class="item-img-relative relative shadow overflow-hidden aspect-items-img mt-5">
+                                <div class="item-img-absolute h-full z-10 w-120 shadow absolute center-absolute">
+                                    
+                                    <div class="flex flex-col justify-end items-end relative">
+                                        <img class="w-full object-cover absolute center-absolute mt-4" src="./assets/img/items/yellow_gold_necklace.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-text z-10 ml-4 py-4">
+                                <h3 class="cursor-auto text-2xl w-fit">Mithril</h3>
+                                <p class="cursor-auto text-lg w-fit">Rp 25.000.000</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="store-item item-container flex items-center justify-center hover-zoom-lg duration-200 cursor-pointer hover-duration-100">
+                        <div class="item flex flex-col justify-center aspect-items w-full box-border rounded-2xl border-4 border-solid border-secondary relative aspect-items bg-main">
+                            <div class="item-img-relative relative overflow-hidden aspect-items-img mt-5">
+                                <div class="item-img-absolute h-full z-10 w-120 shadow absolute center-absolute">
+                                    <img class="w-full object-cover absolute center-absolute" src="./assets/img/items/yellow_gold_earrings.png" alt="">
+                                </div>
+                            </div>
+                            <div class="item-text z-10 ml-4 py-4 overflow-hidden">
+                                <h3 class="cursor-auto text-2xl w-fit">Casablanca</h3>
+                                <p class="cursor-auto text-lg w-fit">Rp 17.000.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- yellow gold items -->
+                </div>
+            </div>
+        </div>
+ 
+
+
+
+
+
+        <div class="white-gold-section relative overflow-hidden">
+            <div class="h-full flex flex-col">
+                <div class="top-yellow-title bg-secondary text-main text-center py-4">
+                    <h1 class="text-7xl">White Gold</h1>
+                </div>
+    
+                <div class="bottom-yellow-items flex flex-row h-full justify-evenly">
+                    <!-- white gold items -->
+                    <div class="store-item item-container flex items-center justify-center hover-zoom-lg duration-200 cursor-pointer hover-duration-100">
+                        <div class="item flex flex-col justify-center aspect-items w-full box-border rounded-2xl border-4 border-solid border-secondary relative aspect-items bg-main">
+                            <div class="item-img-relative relative overflow-hidden aspect-items-img mt-5">
+                                <div class="item-img-absolute h-full z-10 w-120 shadow absolute center-absolute">
+                                    <img class="w-full object-cover absolute center-absolute" src="./assets/img/items/white_gold_ring.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="item-text z-10 ml-4 py-4">
+                                <h3 class="cursor-auto text-2xl w-fit">Atelier</h3>
+                                <p class="cursor-auto text-lg w-fit">Rp 7.000.000</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="store-item item-container flex items-center justify-center hover-zoom-lg duration-200 cursor-pointer hover-duration-100">
+                        
+                        <div class="item flex flex-col justify-center aspect-items w-full box-border rounded-2xl border-4 border-solid border-secondary relative aspect-items bg-main">
+                            <div class="item-img-relative relative overflow-hidden aspect-items-img mt-5">
+                                <div class="item-img-absolute h-full z-10 w-120 shadow absolute center-absolute">
+                                    <img class="w-full object-cover absolute center-absolute" src="./assets/img/items/white_gold_bracelet.png" alt="">
+                                </div>
+                            </div>
+                            <div class="item-text z-10 ml-4 py-4">
+                                <h3 class="cursor-auto text-2xl w-fit">Thorfinn</h3>
+                                <p class="cursor-auto text-lg w-fit">Rp 19.000.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="store-item item-container flex items-center justify-center hover-zoom-lg duration-200 cursor-pointer hover-duration-100">
+                        
+                        <div class="item flex flex-col justify-center aspect-items w-full box-border rounded-2xl border-4 border-solid border-secondary relative aspect-items bg-main">
+                            <div class="item-img-relative relative shadow overflow-hidden aspect-items-img mt-5">
+                                <div class="item-img-absolute h-full z-10 w-120 shadow absolute center-absolute">
+                                    <div class="flex flex-col justify-end items-end relative">
+                                        <img class="w-full object-cover absolute center-absolute mt-16 necklace-img" src="./assets/img/items/white_gold_necklace.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-text z-10 ml-4 py-4">
+                                <h3 class="cursor-auto text-2xl w-fit">Lasgalen</h3>
+                                <p class="cursor-auto text-lg w-fit">Rp 31.000.000</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="store-item item-container flex items-center justify-center hover-zoom-lg duration-200 cursor-pointer hover-duration-100">
+                        
+                        <div class="item flex flex-col justify-center aspect-items w-full box-border rounded-2xl border-4 border-solid border-secondary relative aspect-items bg-main">
+                            <div class="item-img-relative relative overflow-hidden aspect-items-img mt-5">
+                                <div class="item-img-absolute h-full z-10 w-120 shadow absolute center-absolute">
+                                    <img class="w-full object-cover absolute center-absolute" src="./assets/img/items/white_gold_earrings.png" alt="">
+                                </div>
+                            </div>
+                            <div class="item-text z-10 ml-4 py-4">
+                                <h3 class="cursor-auto text-2xl w-fit">Glaciera</h3>
+                                <p class="cursor-auto text-lg w-fit">Rp 23.000.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- white gold items -->
+                </div>
+            </div>
+        </div>
+
+
     </main>
 
 
