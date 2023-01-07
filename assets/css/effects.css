@@ -17,3 +17,79 @@
 .hover-darken:hover{
     filter: brightness(105%);
 }
+
+
+
+
+/* label text effect */
+
+
+
+
+
+
+/* label effect v1 */
+.input-user:placeholder-shown + label.input-label{
+    transform: translate(0%, -50%);
+    font-size: 1.25rem;
+    padding-right: 0px;
+    transition-delay: 200ms;
+}
+.input-user:focus + label.input-label{
+    transform: translate(-100%, -50%);
+    font-size: 1rem;
+    padding-right: 15px;
+    transition-delay: 0ms;
+}
+.input-user + label.input-label{
+    transform: translate(-100%, -50%);
+    font-size: 1rem;
+    padding-right: 15px;
+    transition-delay: 0ms;
+}
+
+.input-user:placeholder-shown + label.input-label > .text-label{
+    transition-delay: 0ms;
+    color: #989898;
+}
+.input-user + label.input-label > .text-label{
+    transition-delay: 200ms;
+    color: black;
+}
+.input-user:focus + label.input-label > .text-label{
+    transition-delay: 200ms;
+    color: black;
+}
+
+
+
+
+
+/* label effect v2 */
+.input-user-v2:placeholder-shown + label.input-label-v2{
+    transform: translate(0%, -50%);
+    font-size: 1.25rem;
+    padding-right: 0px;
+}
+.input-user-v2:focus + label.input-label-v2{
+    transform: translate(0%, -150%);
+    font-size: 0.60rem;
+}
+.input-user-v2 + label.input-label-v2{
+    transform: translate(0%, -150%);
+    font-size: 0.60rem;
+    transition-delay: 0ms;
+}
+
+.input-user-v2:placeholder-shown + label.input-label-v2 > .text-label{
+    color: #989898;
+    font-weight: unset;
+}
+.input-user-v2 + label.input-label-v2 > .text-label{
+    color: black;
+    font-weight: bold;
+}
+.input-user-v2:focus + label.input-label-v2 > .text-label{
+    color: black;
+    font-weight: bold;
+}
