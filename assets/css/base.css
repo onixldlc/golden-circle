@@ -268,7 +268,13 @@ footer{
     border-color: #c8b237;
 }
 .border-grey{
-    border-color: #8f8f9d
+    border-color: #8f8f9d;
+}
+.border-red{
+    border-color: #ff4545
+}
+.border-green {
+    border-color: #009e00;
 }
 
 /* bg colors classes */
@@ -295,6 +301,9 @@ footer{
 }
 .text-red {
     color: #ff0000;
+}
+.text-black{
+    color: #000000;
 }
 
 

@@ -18,6 +18,8 @@
 
     <!-- debug css (will be remove and shouldn't bother unless there is a bug) -->
     <link rel="stylesheet" href="./assets/css/debug.css">
+    <!-- js script for verifying -->
+    <script src="./assets/js/verify.js" defer></script>
 
 </head>
 <body class="flex flex-col">
@@ -121,7 +123,7 @@
                         <div class="user-checkmark-container mt-16 w-fit">
                             <div class="user-checkbox">
                                 <input type="checkbox" name="agreement" id="agreement">
-                                <label for="agreement">I have read and agree to the terms and conditions<span class="text-red">*</span></label>
+                                <label class="text-black" for="agreement">I have read and agree to the terms and conditions<span class="text-red">*</span></label>
                             </div>
                             <div class="user-checkbox">
                                 <input type="checkbox" name="sendEmail" id="sendEmail">
