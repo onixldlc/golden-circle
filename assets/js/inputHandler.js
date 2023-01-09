@@ -34,6 +34,7 @@ export class inputHandler{
         
         if(el.type == "checkbox" && !el.checked){
             msg = "input need to be checked";
+            customAlert("checkbox");
             changeColor(el, "red");
         }else{
             changeColor(el, "black");
@@ -41,6 +42,7 @@ export class inputHandler{
 
         if(["password", "text"].includes(el.type) && !el.value){
             msg = "input cant be empty";
+            customAlert("text");
             changeBorder(el, "red");
         }else{
             Array.from(Email.classList).includes()
