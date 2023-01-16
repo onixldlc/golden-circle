@@ -1,5 +1,3 @@
-// show the alert box
-
 class alertHandler{
     constructor(alertID){
         this.alert = $(`${alertID}`)
@@ -60,9 +58,7 @@ $("#registButton").on("click", async()=>{
         if(popupData==0){
             popupData = checks
         }
-        console.log(popupData, checks)
     }
-    console.log(popupData)
     if(popupData.msg != "success"){
         window.alertHandles.toast(popupData.el.id, popupData.msg, -1)
     }else if(popupData.msg == "notify"){

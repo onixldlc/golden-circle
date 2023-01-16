@@ -3,7 +3,6 @@
     let inputs = Array.from(form.getElementsByTagName("input"));
     let exludes = ["sendEmail", "divider"];
     let inputHandler = (await import("./inputHandler.js")).inputHandler
-    let rules = (await import("./rules.js")).rules
     let utility = (await import("./utility.js")).default
     let checkAllInput = false;
     for(let input of inputs){

@@ -49,11 +49,9 @@ async function advanceCheckInput(el){
     else if(rulesList.includes(el.id) && !rules[el.id].check(el)){
         msg = rules[el.id].msg
     }
-    console.log(rules.default.msg, msg, rules.default.check(el), rulesList.includes(el.id) && !rules[el.id].check(el));
 
     if(msg != "success"){
         if(isText(el)){
-            console.log(msg);
             changeBorder(el, "red");
         }else{
             changeColor(el, "red");
@@ -120,7 +118,6 @@ let rules = {
                     allowed = false
                 }
             })
-            console.log(allowed)
             return allowed
         }
     },
@@ -184,7 +181,6 @@ let rules = {
             if(el.value == ""){
                 allowed = false
             }
-            console.log("testing: ",el.value, allowed);
             return allowed;
         }
     }

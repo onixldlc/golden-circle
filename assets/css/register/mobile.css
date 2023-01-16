@@ -46,9 +46,18 @@
 
 
 
+    .alert-box-pos-hidden{
+        bottom: 30px;
+    }
+    
+    .alert-box-pos-show{
+        bottom: 30px;
+        right: 10px;
+    }
 
-
-
+    #custom-alert-asd552{
+        max-width: 190px;
+    }
 
 
 

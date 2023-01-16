@@ -19,7 +19,7 @@
 
 .alert-box-pos-hidden{
     bottom: 30px;
-    right: -50%;
+    right: -150%;
     transition-duration: 2s;
     transition-timing-function: cubic-bezier(.68,-0.55,.27,1.55);
 }
@@ -27,7 +27,7 @@
 .alert-box-pos-show{
     bottom: 30px;
     right: 30px;
-    transition-duration: 500ms;
+    transition-duration: 750ms;
     transition-timing-function: cubic-bezier(.47,1.64,.41,.8);
 }
 
