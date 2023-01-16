@@ -17,3 +17,31 @@
 
 
 
+.alert-box-pos-hidden{
+    bottom: 30px;
+    right: -50%;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+.alert-box-pos-show{
+    bottom: 30px;
+    right: 30px;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(.47,1.64,.41,.8);
+}
+
+.red-alert-border{
+    border-color: #c3c3c3 #c3c3c3 #c3c3c3 #ff4545;
+    border-width: 2px 2px 2px 8px;
+}
+
+.green-alert-border{
+    border-color: #c3c3c3 #c3c3c3 #c3c3c3 #009e00;
+    border-width: 2px 2px 2px 8px;
+}
+
+.grey-alert-border{
+    border-color: #c3c3c3 #c3c3c3 #c3c3c3 #8f8f9d;
+    border-width: 2px 2px 2px 8px;
+}

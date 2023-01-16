@@ -101,6 +101,9 @@ footer{
 .relative{
     position: relative;
 }
+.fix{
+    position: fixed;
+}
 .box-border{
     box-sizing: border-box;
 }

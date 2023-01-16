@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="./assets/css/font.css">
     <link rel="stylesheet" href="./assets/css/effects.css">
 
+    <!-- jquery becs someone said so -_- -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
     <link rel="shortcut icon" href="./assets/img/logo.ico" type="image/x-icon">
 
     <!-- file specific css -->
@@ -20,6 +23,7 @@
     <link rel="stylesheet" href="./assets/css/debug.css">
     <!-- js script for verifying -->
     <script src="./assets/js/verify.js" defer></script>
+    <script src="./assets/js/alertHandler.js" defer></script>
 
 </head>
 <body class="flex flex-col">
@@ -87,6 +91,14 @@
                                 </label>
                             </div>
                             <div class="user-input-data flex flex-row relative py-1 ">
+                                <input class="input-user-v2 rounded-lg border-1 border-grey w-full placeholder-transparent text-lg px-2 pt-2" name="Phone" id="Phone" type="text" placeholder="Phone">
+                                <label for="Phone" class="input-label-v2 absolute left-2 vertical-center-absolute text-placeholder pointer-events-none duration-400">
+                                    <div class="text-label duration-400">
+                                        Phone
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="user-input-data flex flex-row relative py-1 ">
                                 <input class="input-user-v2 rounded-lg border-1 border-grey w-full placeholder-transparent text-lg px-2 pt-2" name="Password" id="Password" type="password" placeholder="Password">
                                 <label for="Password" class="input-label-v2 absolute left-2 vertical-center-absolute text-placeholder pointer-events-none duration-400">
                                     <div class="text-label duration-400">
@@ -140,7 +152,7 @@
                         </div>
     
                         <div class="user-regbut-container mt-16 w-full flex justify-center items-center mb-16">
-                            <div class="register-button bg-secondary text-center flex justify-center items-center cursor-pointer hover-box-glow-secondary hover-zoom">
+                            <div id="registButton" class="register-button bg-secondary text-center flex justify-center items-center cursor-pointer hover-box-glow-secondary hover-zoom">
                                 <p class="font-bold text-main text-2xl">Register</p>
                             </div>
                         </div>
@@ -169,5 +181,15 @@
             <div class="footer-logo-placeholder"></div>
         </div>
     </footer>
+
+    <div id="custom-alert-container-asd552" class="w-full h-full fix pointer-events-none ">
+        <div class="w-full h-full absolute">
+            <div id="custom-alert-asd552" class="absolute alert-box-pos bg-main p-4 rounded-xl red-alert-border border-solid alert-box-pos-hidden">
+                <h1 class="mb-4">Error</h1>
+                <p>one hella long long long error description</p>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>

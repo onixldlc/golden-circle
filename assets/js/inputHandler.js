@@ -7,7 +7,11 @@ export class inputHandler{
      * @param {function(string):void} [param2.callback] - callback function that handles what to check and return boolean
      */
     constructor(el, {callback}={}){
-        this.callback = callback || this.defaultCallbackBehavior;
+        if(callback == null){
+            this.callback = this.defaultCallbackBehavior;
+        }else{
+            this.callback = callback
+        }
         this.el = el;
     }
 
@@ -42,7 +46,6 @@ export class inputHandler{
 
         if(["password", "text"].includes(el.type) && !el.value){
             msg = "input cant be empty";
-            customAlert("text");
             changeBorder(el, "red");
         }else{
             Array.from(Email.classList).includes()
